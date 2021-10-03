@@ -47,6 +47,19 @@ int main(void)
         _delay_ms(SHORT_DELAY);
 
         // WRITE YOUR CODE HERE
+        /*
+		The First command is the point, it turns the led on for 1 short delay.
+		The second, turns of the led for 1 short delay.
+		The last turns the LED on for 2 short delay, to represent the dash.
+		*/
+        PORTB = PORTB ^ (1<<LED_GREEN);
+		_delay_ms(SHORT_DELAY);
+		
+		PORTB = PORTB & ~(1<<LED_GREEN);
+		_delay_ms(SHORT_DELAY);
+		
+		PORTB = PORTB ^ (1<<LED_GREEN);
+		
     }
 
     // Will never reach this
