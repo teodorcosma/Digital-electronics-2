@@ -2,27 +2,27 @@
 
 Link to your `Digital-electronics-2` GitHub repository:
 
-   [https://github.com/...](https://github.com/...)
+   [https://github.com/teodorcosma/Digital-electronics-2/](https://github.com/teodorcosma/Digital-electronics-2/)
 
 
 ### Blink example
 
 1. What is the meaning of the following binary operators in C?
-   * `|`
-   * `&`
-   * `^`
-   * `~`
-   * `<<`
-   * `>>`
+   * `|` This is the bitwise OR operator
+   * `&` This is the bitwise AND operator
+   * `^` This is the bitwise XOR operator
+   * `~` This is the bitwise NOT operator
+   * `<<` This is the LEFT SHIFT operator
+   * `>>` This is the RIGHT SHIFT operator
 
 2. Complete truth table with operators: `|`, `&`, `^`, `~`
 
-| **b** | **a** |**b or a** | **b and a** | **b xor a** | **not b** |
+| **b** | **a** |**b \| a** | **b \& a** | **b \^ a** | **\~ b** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| 0 | 0 |  |  |  |  |
-| 0 | 1 |  |  |  |  |
-| 1 | 0 |  |  |  |  |
-| 1 | 1 |  |  |  |  |
+| 0 | 0 | 0 | 0 | 0 | 1 |
+| 0 | 1 | 1 | 0 | 1 | 1 |
+| 1 | 0 | 1 | 0 | 1 | 0 |
+| 1 | 1 | 1 | 1 | 0 | 0 |
 
 
 ### Morse code
