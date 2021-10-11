@@ -33,14 +33,25 @@ Link to your `Digital-electronics-2` GitHub repository:
     // Configure Push button at port D and enable internal pull-up resistor
     // WRITE YOUR CODE HERE
 
-    // Infinite loop
-    while (1)
-    {
-        // Pause several milliseconds
-        _delay_ms(BLINK_DELAY);
-
-        // WRITE YOUR CODE HERE
-    }
+   /* Configuring the blue and red LEDs to be on and off separately,
+and configuring the ports C and B to be output ports, 
+then configuring the button*/
+ GPIO_config_output(&DDRB, BLUE_LED);
+ GPIO_config_output(&DDRC, RED_LED);
+ GPIO_write_low(&PORTB, BLUE_LED);
+ GPIO_write_high(&PORTC, RED_LED);
+ GPIO_config_input_pullup(&DDRD, BUTTON);
+ while (1)
+ {
+ _delay_ms(BLINK_DELAY);
+if (GPIO_read(&PIND, BUTTON) == 0)
+{
+GPIO_toggle(&PORTB, BLUE_LED);
+GPIO_toggle(&PORTC, RED_LED);
+}
+ }
+ // Will never reach this
+ return 0;
 ```
 
 
