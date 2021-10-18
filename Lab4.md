@@ -2,7 +2,7 @@
 
 Link to your `Digital-electronics-2` GitHub repository:
 
-   [https://github.com/...](https://github.com/...)
+   [https://github.com/teodorcosma/Digital-electronics-2/](https://github.com/teodorcosma/Digital-electronics-2/)
 
 
 ### Overflow times
