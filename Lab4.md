@@ -23,7 +23,9 @@ Link to your `Digital-electronics-2` GitHub repository:
    * Interrupt service routine
    
    A C function is a group of statements that performs a task, which is executed when it is called. This means that the functions are synchronous.
+   
    A ISR is a group of statements, that executes as a response to an event which happenes at a point that we don't know in the future, and it is asynchronous.
+   
    The ISR doesn't return any results and it can be called at any point when an interrupt happens.
 
 2. Part of the header file listing with syntax highlighting, which defines settings for Timer/Counter0:
