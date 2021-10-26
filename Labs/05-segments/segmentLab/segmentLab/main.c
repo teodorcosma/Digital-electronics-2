@@ -62,6 +62,13 @@ int main(void)
  * Function: Timer/Counter1 overflow interrupt
  * Purpose:  Increment decimal counter value and display it on SSD.
  **********************************************************************/
+ISR(TIMER0_OVF_vect)
+{
+    static uint8_t pos = 0;  // This line will only run the first time
+    pos++;
+    SEG_update_shift_regs(val2,1);
+    SEG_update_shift_regs(val,0);
+}
 ISR(TIMER1_OVF_vect)
 {   
     // WRITE YOUR CODE HERE
@@ -74,13 +81,5 @@ ISR(TIMER1_OVF_vect)
         }
     if(val2>5)
         val2=0;    
-    SEG_update_shift_regs(val2,1);
-
-    SEG_update_shift_regs(val,0);   
-}
-ISR(TIMER0_OVF_vect)
-{
-    static uint8_t pos = 0;  // This line will only run the first time
-    pos++;
-    
+      
 }
