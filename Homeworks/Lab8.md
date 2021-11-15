@@ -2,7 +2,7 @@
 
 Link to this file in your GitHub repository:
 
-[https://github.com/teodorcosma/Digital-electronics-2/new/main/Homeworks/Lab08.md](https://github.com/teodorcosma/Digital-electronics-2/new/main/Homeworks/Lab08.md)
+[https://github.com/teodorcosma/Digital-electronics-2/blob/main/Homeworks/Lab8.md](https://github.com/teodorcosma/Digital-electronics-2/blob/main/Homeworks/Lab8.md)
 
 ### Arduino Uno pinout
 
